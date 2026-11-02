@@ -12,6 +12,7 @@
     ["election.html", "선거 유세차", "election"],
     ["protest.html", "LED 시위차", "protest"],
     ["screen.html", "LED 스크린 대여", "screen"],
+    ["billboard.html", "옥외광고 매체", "billboard"],
     ["index.html#cases", "현장 사례", "cases"],
     ["index.html#contact", "견적 문의", "contact"]
   ];
