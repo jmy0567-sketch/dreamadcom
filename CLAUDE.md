@@ -39,3 +39,9 @@
 - 지난주 성과(analytics_posts_performance) 상위 형식 쪽으로 기울이고, 노션 소통 리스트 맨 위에 "## M/D 주간 예약·성과" 3줄.
 - 11/30 이후 특가 문구는 대표님 지시가 있을 때만.
 - 유튜브: 드림애드컴 채널이 Mirra에 연결되면 릴스를 쇼츠로 같이 올린다(신불당 유튜브 사용 금지).
+
+## 진주점 영업 키트 (11/3)
+- 타깃 20·홍보 방안: `marketing/jinju-sales-ideas.md` / 노션 리드 페이지 40d97b79-adde-8187-84b6-f984ad32f58b (리드 표·시안·문구)
+- 업체별 시안: `marketing/sales/leads.json` 수정 → `node marketing/sales/render_creatives.js` → `python3 marketing/sales/compose_mockups.py` (실제 매체 사진에 합성)
+- 업종별 짧은 영상: `marketing/media/jinju/jinju-cut-{bunyang,hospital,lms}.mp4` (예약: 인스타 11/10·11/17·11/24 12:10, 스레드 11/9·11/13·11/20 18:20)
+- 배경음악은 `marketing/tools/bgm_synth.py`로 직접 합성(저작권 없음).
