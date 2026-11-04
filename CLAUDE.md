@@ -28,7 +28,7 @@
 - 매체 소개서: `marketing/proposal/galleria_gen.py` → `node render-galleria.js`
 - 이미지·영상은 커밋 SHA 고정 raw.githubusercontent URL로 Mirra에 넘긴다(저장소 공개 유지).
 
-## 매일 아침 소통 리스트 (09:41 KST — 대표님 요청 9:30~10:00, 루틴 trig_015qtT2Nqrt9RsWmiEV1UAuN)
+## 매일 아침 댓글 거리 (09:41 시작 → 10시 전 대화창 도착, 노션 매뉴얼 9-1 형식, 루틴 trig_015qtT2Nqrt9RsWmiEV1UAuN)
 - 노션 페이지 40d97b79-adde-81f0-8968-fa1bd024390c 맨 위에 날짜 섹션 추가(첫 "---" 바로 아래).
 - 대상은 Meta 광고 라이브러리(mcp__mirr__reference_ad_search)에서 지금 광고 중인 천안·아산 / 진주·서부경남 지역 업체. 지역이 불분명하면 빼고, 못 채우면 있는 만큼만.
 - 요일 주제: 월 병원·개원 / 화 학원 / 수 분양 / 목 오픈·매장 / 금 프랜차이즈 / 토 병원 / 일 분양.
