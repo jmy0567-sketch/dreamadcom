@@ -44,7 +44,7 @@ for key, s in STORES.items():
     P = []
     P.append(f'''<section class="pg cover"><div class="in"><span class="tag">옥외광고 매체 소개서</span>
 <h1>{s["name"].replace("갤러리아백화점 ","갤러리아백화점<br><em>")}</em><br>옥외광고</h1><p>{s["addr"]} · {s["area"]}</p></div>
-<div class="foot"><span>(주)드림애드컴</span><span>대표번호 <b>1599-3611</b> · 천안시 서북구 불당34길 3-16 · ad3611@naver.com</span></div></section>''')
+<div class="foot"><span>갤러리아백화점 공식 광고대행사 (주)드림애드컴</span><span>대표번호 <b>1599-3611</b> · 천안시 서북구 불당34길 3-16 · ad3611@naver.com</span></div></section>''')
     cards = ''.join(f'<div class="card"><span class="n">{n}</span><h3>{h}</h3><p>{p}</p></div>' for n, h, p in s['why'])
     P.append(page(2, f'<span class="kick">WHY</span><h2>{s["short"]} 매체를 <em>선택해야 하는 이유</em></h2><div class="grid3">{cards}</div>'))
     tg = ''.join(f'<div class="card"><h3 style="font-size:28px">{a}</h3><p>{b}</p></div>' for a, b in s['targets'])
@@ -53,7 +53,7 @@ for key, s in STORES.items():
         rows=''.join(f'<tr><th>{a}</th><td><b>{b}</b></td><td>{c}</td></tr>' for a,b,c in s['media'])
         P.append(page(4, f'''<span class="kick">MEDIA</span><h2>{s["short"]} <em>광고 매체 5종</em></h2>
 <table><tr><th style="width:300px">매체</th><td style="color:#6b7280;width:280px">규격·단위</td><td style="color:#6b7280">노출</td></tr>{rows}</table>
-<p class="note">(주)드림애드컴 직접 운영 · 광고비는 기간·매체 조합에 따라 협의 · 시안 → 제작 → 게시 사진 보고까지 일괄 진행</p>'''))
+<p class="note">갤러리아 공식 광고대행사 (주)드림애드컴 운영 · 광고비는 기간·매체 조합에 따라 협의 · 시안 → 제작 → 게시 사진 보고까지 일괄 진행</p>'''))
         ph=''.join(f'<figure style="margin:0"><img src="{u}" style="width:100%;height:330px;object-fit:cover;border-radius:14px;display:block"><figcaption style="margin-top:10px;font-size:20px;font-weight:700">{c}</figcaption></figure>' for u,c in s['photos'])
         P.append(page(5, f'<span class="kick">ON SITE</span><h2>현장에서 <em>이렇게 보입니다</em></h2><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:24px">{ph}</div>'))
     else:

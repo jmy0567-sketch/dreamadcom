@@ -11,7 +11,7 @@ const css=`@font-face{font-family:P;src:url(${F('Pretendard-Bold.otf')});font-we
 .big{position:absolute;left:90px;right:90px;top:620px;font-weight:900;font-size:110px;line-height:1.15;white-space:pre-line}
 .box{position:absolute;left:90px;right:90px;bottom:300px;background:#d7ff3c;color:#111;border-radius:30px;padding:46px 54px}.box b{display:block;font-size:52px;font-weight:900}.box span{font-size:96px;font-weight:900}`;
 const S=[
- {big:'갤러리아 천안\n센터시티 광고,\n드림애드컴이\n운영합니다', k:'광고 매체 독점 운영', end:false},
+ {big:'갤러리아 천안\n센터시티 광고,\n드림애드컴이\n운영합니다', k:'갤러리아 공식 광고대행사', end:false},
  {k:'주차장 출입구 와이드',t:'들어갈 때 한 번\n나올 때 또 한 번',s:'3,000×2,000mm · 후면 조명\n일 평균 3.3만 명 (드림애드컴 AI 측정)',img:'cc-parking-entry-far.jpg'},
  {k:'1F · B1F 엘리베이터홀 벽면',t:'기다리는 고객\n바로 정면',s:'1,500×2,000 / 3,000×2,000mm\nB1 평균 체류 42분 (자체 측정)',img:'cc-1f-north-far.jpg'},
  {k:'엘리베이터홀 벽면 · 근경',t:'이렇게\n걸립니다',s:'실제 집행 사진',img:'cc-b1-north-near.jpg'},
@@ -21,7 +21,7 @@ const S=[
 ];
 (async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
 for(const [i,x] of S.entries()){let h;
- if(x.end) h=`<div class="k" style="top:420px">갤러리아 천안 센터시티</div><div class="big" style="top:500px;font-size:96px">광고 상담은\n20년째 광고판 거는\n드림애드컴</div><div class="box"><b>견적·무료 시안 상담</b><span>1599-3611</span></div><div class="tag">(주)드림애드컴 · 광고비는 협의</div>`;
+ if(x.end) h=`<div class="k" style="top:420px">갤러리아 천안 센터시티</div><div class="big" style="top:500px;font-size:96px">광고 상담은\n갤러리아 공식 광고대행사\n드림애드컴</div><div class="box"><b>견적·무료 시안 상담</b><span>1599-3611</span></div><div class="tag">(주)드림애드컴 · 광고비는 협의</div>`;
  else if(x.big) h=`<div class="k" style="top:520px">${x.k}</div><div class="big">${x.big}</div><div class="tag">THE GALLERIA · CENTERCITY</div><div class="tel">1599-3611</div>`;
  else h=`<div class="k">${x.k}</div><div class="t">${x.t}</div><div class="s">${x.s}</div><div class="ph" style="background-image:url(${IMG(x.img)})"></div><div class="tag">(주)드림애드컴 · 갤러리아 천안 센터시티</div><div class="tel">1599-3611</div>`;
  await p.setContent(`<style>${css}</style>${h}`);await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(__dirname,`s${i}.png`)});}
