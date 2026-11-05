@@ -44,7 +44,7 @@ for key, s in STORES.items():
     P = []
     P.append(f'''<section class="pg cover"><div class="in"><span class="tag">옥외광고 매체 소개서</span>
 <h1>{s["name"].replace("갤러리아백화점 ","갤러리아백화점<br><em>")}</em><br>옥외광고</h1><p>{s["addr"]} · {s["area"]}</p></div>
-<div class="foot"><span>갤러리아백화점 공식 광고대행사 (주)드림애드컴</span><span>대표번호 <b>1599-3611</b> · 천안시 서북구 불당34길 3-16 · ad3611@naver.com</span></div></section>''')
+<div class="foot"><span>(주)드림애드컴</span><span>대표번호 <b>1599-3611</b> · 천안시 서북구 불당34길 3-16 · ad3611@naver.com</span></div></section>''')
     cards = ''.join(f'<div class="card"><span class="n">{n}</span><h3>{h}</h3><p>{p}</p></div>' for n, h, p in s['why'])
     P.append(page(2, f'<span class="kick">WHY</span><h2>{s["short"]} 매체를 <em>선택해야 하는 이유</em></h2><div class="grid3">{cards}</div>'))
     tg = ''.join(f'<div class="card"><h3 style="font-size:28px">{a}</h3><p>{b}</p></div>' for a, b in s['targets'])
