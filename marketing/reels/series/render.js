@@ -1,0 +1,19 @@
+// 자리별 시리즈 릴스 슬라이드 렌더: node render.js  → out/<key>/s*.png
+const { chromium } = require('playwright'); const fs=require('fs'), path=require('path');
+const F=f=>'data:font/otf;base64,'+fs.readFileSync(path.join(__dirname,'../../proposal/fonts',f)).toString('base64');
+const IMG=f=>'data:image/jpeg;base64,'+fs.readFileSync(path.join(__dirname,f)).toString('base64');
+const css=`@font-face{font-family:P;src:url(${F('Pretendard-Medium.otf')});font-weight:500}@font-face{font-family:P;src:url(${F('Pretendard-Bold.otf')});font-weight:700}@font-face{font-family:P;src:url(${F('Pretendard-Black.otf')});font-weight:900}
+*{margin:0;box-sizing:border-box;word-break:keep-all}body{width:1080px;height:1920px;background:#0b0b0c;color:#f5f1e8;font-family:P;position:relative;overflow:hidden}
+.g{color:#c9a96e}.k{position:absolute;left:80px;top:250px;font-weight:700;font-size:42px;letter-spacing:.04em}.t{position:absolute;left:80px;right:80px;top:320px;font-weight:900;font-size:80px;line-height:1.2;white-space:pre-line}
+.ph{position:absolute;left:50px;right:50px;top:620px;height:1000px;border-radius:26px;background-size:cover;background-position:center 40%}
+.cap{position:absolute;left:80px;bottom:200px;font-weight:700;font-size:36px;color:#ddd}.tel{position:absolute;right:80px;bottom:100px;font-weight:900;font-size:44px;color:#c9a96e}.tag{position:absolute;left:80px;bottom:106px;font-size:30px;color:#888;font-weight:700}
+.big{position:absolute;left:80px;right:80px;top:640px;font-weight:900;font-size:112px;line-height:1.15;white-space:pre-line}`;
+const S=JSON.parse(fs.readFileSync(path.join(__dirname,'series.json')));
+(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1080,height:1920}});
+for(const r of S){const dir=path.join(__dirname,'out',r.key);fs.mkdirSync(dir,{recursive:true});const pages=[];
+ pages.push(`<div class="k g" style="top:560px">${r.store} · 처음 열린 광고 자리 ${r.no}</div><div class="big">${r.title}</div><div class="s" style="position:absolute;left:80px;top:1180px;font-size:48px;font-weight:700;color:#ddd">여기에 광고를 할 수 있게 됐습니다</div><div class="tag">${r.store}</div><div class="tel">1599-3611</div>`);
+ for(const [img,t,cap] of r.slides) pages.push(`<div class="k g">${r.place}</div><div class="t">${t}</div><div class="ph" style="background-image:url(${IMG(img)})"></div><div class="cap" style="bottom:240px">${cap}</div><div class="tag">${r.store}</div><div class="tel">1599-3611</div>`);
+ pages.push(`<div class="k g" style="top:560px">${r.place}</div><div class="big g" style="font-size:92px">${r.fact}</div><div style="position:absolute;left:80px;top:1060px;font-size:36px;color:#aaa;font-weight:700">${r.src}</div><div class="tag">${r.store}</div><div class="tel">1599-3611</div>`);
+ pages.push(`<div class="k g" style="top:420px">${r.store}</div><div class="big" style="top:500px;font-size:96px">이 자리의\n첫 번째 브랜드를\n모십니다</div><div style="position:absolute;left:80px;right:80px;top:1050px;background:#c9a96e;color:#0b0b0c;border-radius:30px;padding:44px 54px"><div style="font-size:44px;font-weight:900">전화 상담</div><div style="font-size:110px;font-weight:900;line-height:1.05">1599-3611</div><div style="font-size:36px;font-weight:700;margin-top:14px">DM에 "광고" → 소개서 바로 전송</div></div><div class="tag" style="font-size:26px">갤러리아 공식 광고대행사 (주)드림애드컴</div>`);
+ for(const [i,h] of pages.entries()){await p.setContent(`<style>${css}</style>${h}`);await p.evaluate(()=>document.fonts.ready);await p.screenshot({path:path.join(dir,`s${i}.png`)});}}
+await b.close();console.log('ok')})().catch(e=>{console.error(e);process.exit(1)});
