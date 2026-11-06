@@ -17,7 +17,7 @@
   ];
 
   var header = document.getElementById("site-header");
-  if (header) {
+  if (header && !header.children.length) {
     header.className = "site-header";
     header.innerHTML =
       '<div class="wrap">' +
@@ -28,14 +28,16 @@
       '<a class="header-call" href="' + TEL_LINK + '">' + ICON_PHONE.replace("<svg", '<svg width="18" height="18"') + " " + TEL + "</a>" +
       '<button class="menu-btn" aria-label="메뉴 열기" id="menu-btn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>' +
       "</div>";
-    var btn = document.getElementById("menu-btn");
-    var navEl = document.getElementById("nav");
+  }
+  var btn = document.getElementById("menu-btn");
+  var navEl = document.getElementById("nav");
+  if (btn && navEl) {
     btn.addEventListener("click", function () { navEl.classList.toggle("open"); });
     navEl.addEventListener("click", function (e) { if (e.target.tagName === "A") navEl.classList.remove("open"); });
   }
 
   var footer = document.getElementById("site-footer");
-  if (footer) {
+  if (footer && !footer.children.length) {
     footer.className = "site-footer";
     footer.innerHTML =
       '<div class="wrap">' +
