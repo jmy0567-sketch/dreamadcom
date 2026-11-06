@@ -18,7 +18,10 @@
   ],
   "fact": "일 평균 약 3.3만 명\n입차·출차 두 번 노출",
   "src": "드림애드컴 AI 측정 자료 기준",
-  "title": "주차장\n입구 · 출구"
+  "title": "주차장\n입구 · 출구",
+  "exterior": "img/c-building.jpg",
+  "exteriorMode": "band",
+  "storeEn": "GALLERIA CENTERCITY · CHEONAN"
  },
  {
   "key": "c2-luxury",
@@ -39,7 +42,10 @@
   ],
   "fact": "구매력 있는 고객 바로 앞\n1인당 평균 4.2회 노출",
   "src": "드림애드컴 자체 측정 자료 기준",
-  "title": "1층 명품관\n엘리베이터홀"
+  "title": "1층 명품관\n엘리베이터홀",
+  "exterior": "img/c-building.jpg",
+  "exteriorMode": "band",
+  "storeEn": "GALLERIA CENTERCITY · CHEONAN"
  },
  {
   "key": "c3-food",
@@ -60,7 +66,10 @@
   ],
   "fact": "하루 약 1.5만 명\n평균 체류 42분",
   "src": "드림애드컴 자체 측정 자료 기준",
-  "title": "지하 1층 식품관\n엘리베이터홀"
+  "title": "지하 1층 식품관\n엘리베이터홀",
+  "exterior": "img/c-building.jpg",
+  "exteriorMode": "band",
+  "storeEn": "GALLERIA CENTERCITY · CHEONAN"
  },
  {
   "key": "c4-screens",
@@ -81,7 +90,10 @@
   ],
   "fact": "백화점 전 층\n엘리베이터홀 18곳",
   "src": "층마다 다시 보이는 반복 노출",
-  "title": "엘리베이터홀\n18곳 화면"
+  "title": "엘리베이터홀\n18곳 화면",
+  "exterior": "img/c-building.jpg",
+  "exteriorMode": "band",
+  "storeEn": "GALLERIA CENTERCITY · CHEONAN"
  },
  {
   "key": "j1-west",
