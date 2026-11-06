@@ -90,11 +90,6 @@
   "place": "서문 출입구 LED",
   "slides": [
    [
-    "img/j-building.jpg",
-    "진주·서부경남 고객이\n모이는 곳",
-    "갤러리아백화점 진주점"
-   ],
-   [
     "img/j-led.jpg",
     "주차하고 들어오면\n가장 먼저 마주치는 정면",
     "서문 출입구 LED 1,500×2,400mm"
@@ -102,7 +97,9 @@
   ],
   "fact": "주차 고객이\n지나칠 수 없는 입구",
   "src": "갤러리아 진주점 하루 방문 약 1만 명(추정)",
-  "title": "서문\n출입구 LED"
+  "title": "서문\n출입구 LED",
+  "exterior": "img/j-building.jpg",
+  "storeEn": "GALLERIA · JINJU"
  },
  {
   "key": "j2-moving",
@@ -118,7 +115,9 @@
   ],
   "fact": "10기 전 화면에\n같은 광고 동시 송출",
   "src": "층을 옮길 때마다 다시 보입니다",
-  "title": "무빙워크 ·\n에스컬레이터 화면"
+  "title": "무빙워크 ·\n에스컬레이터 화면",
+  "exterior": "img/j-building.jpg",
+  "storeEn": "GALLERIA · JINJU"
  },
  {
   "key": "j3-elevator",
@@ -134,6 +133,8 @@
   ],
   "fact": "가장 많이 타는\n엘리베이터 4대",
   "src": "짧지만 피할 수 없는 노출",
-  "title": "엘리베이터\n안 화면"
+  "title": "엘리베이터\n안 화면",
+  "exterior": "img/j-building.jpg",
+  "storeEn": "GALLERIA · JINJU"
  }
 ]
