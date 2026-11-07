@@ -18,6 +18,15 @@
 - [LED 시위차](https://jmy0567-sketch.github.io/dreamadcom/protest.html): 1인 시위·무인 시위·대형 집회·K-POP 팬덤 트럭. 개인·단체 누구나 이용.
 - [LED 스크린 대여](https://jmy0567-sketch.github.io/dreamadcom/screen.html): 200~500인치 실내외 LED 스크린. 설치·운영·철수까지 전담팀.
 
+- [분양·개업·기업 홍보](https://jmy0567-sketch.github.io/dreamadcom/business.html): 아파트 분양, 매장 개업, 신제품 시음·체험, 프랜차이즈 캠페인. 여러 대 동시 운영, 브랜드 래핑, 장기 계약.
+- [천안·아산·세종](https://jmy0567-sketch.github.io/dreamadcom/cheonan.html): 본사(천안 불당동)와 공장(천안 입장면)이 천안에 있음. 천안 호두축제·전국 농소가요제 현장.
+
+## 안내 (처음 이용하는 분)
+- [LED 전광판 트럭 비용 안내](https://jmy0567-sketch.github.io/dreamadcom/cost-guide.html): 비용은 차량 크기·이용 기간·지역과 동선으로 정해짐. 1일 6시간 기준, 기사 출장비·유류비·음향·발전기 포함.
+- [트럭 시위 하는 법](https://jmy0567-sketch.github.io/dreamadcom/truck-protest-guide.html): 메시지 → 장소·시간 → 신고 확인(주최자가 관할 경찰서) → 차량 → 영상 USB → 당일 운영.
+- [선거 유세차 준비 체크리스트](https://jmy0567-sketch.github.io/dreamadcom/election-guide.html): 2028년 4월 국회의원 선거 대비 조기 예약. 임대 또는 기존 트럭 개조, 래핑, 출고 전 테스트.
+- [English guide](https://jmy0567-sketch.github.io/dreamadcom/en.html): LED truck rental anywhere in South Korea for K-pop fan trucks and protests. Email ad3611@naver.com.
+
 ## 차량 사양 (차량 상태에 따라 다를 수 있음)
 - 1톤: LED 100인치(2.0×1.5m), 해상도 4,800·4mm 픽셀, 앰프 4kW·스피커 1.2kW, 믹서 7채널, 유·무선 마이크 3개, 무소음 발전기 7kW
 - 2.5톤(3톤): LED 120인치(2.5×2.0m), 해상도 3,800·3mm 픽셀, 앰프 4kW·스피커 2.4kW, 믹서 7채널, 마이크 3개, 발전기 7kW

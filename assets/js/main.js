@@ -56,12 +56,24 @@
       "</div>";
   }
 
+  // 문자 링크 (iOS·안드로이드 공통 형식)
+  function smsLink(body) { return "sms:15993611?&body=" + encodeURIComponent(body); }
+
+  // 30초 문자 견적 양식
+  document.querySelectorAll(".quick-quote").forEach(function (f) {
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var v = function (n) { return (f.elements[n].value || "").trim(); };
+      location.href = smsLink("[드림애드컴 견적 문의]\n용도: " + v("use") + "\n날짜·기간: " + v("date") + "\n장소: " + v("place") + "\n차량: " + v("car"));
+    });
+  });
+
   // 모바일 하단 고정 바 + 데스크톱 플로팅 전화 버튼
   var bar = document.createElement("div");
   bar.className = "mobile-bar";
   bar.innerHTML =
     '<a class="m-call" href="' + TEL_LINK + '">' + ICON_PHONE + " 전화 상담 " + TEL + "</a>" +
-    '<a class="m-sms" href="sms:15993611">' + ICON_MSG + " 문자 문의</a>";
+    '<a class="m-sms" href="' + smsLink("[견적 문의]\n날짜·기간: \n장소: \n용도: ") + '">' + ICON_MSG + " 문자 문의</a>";
   document.body.appendChild(bar);
   var fl = document.createElement("a");
   fl.className = "float-call";
