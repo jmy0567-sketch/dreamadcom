@@ -390,3 +390,16 @@ section { padding: 96px 0; }
 .steps-wide { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 900px) { .steps-wide { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .steps-wide { grid-template-columns: 1fr; } }
+
+/* 차량 크기 추천 도우미 */
+.car-finder { display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 12px; align-items: end; background: var(--ink); border-radius: var(--radius); padding: 24px; }
+.car-finder label { display: grid; gap: 6px; font-size: 14px; font-weight: 700; color: #cfd4dd; }
+.car-finder select { font: inherit; font-size: 16px; padding: 11px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.25); background: #1a1d24; color: #fff; }
+.car-finder button { border: 0; cursor: pointer; justify-content: center; }
+.cf-result { grid-column: 1 / -1; background: #fff; color: var(--ink); border-radius: 14px; padding: 18px 20px; }
+.cf-result b { font-size: 20px; font-weight: 900; display: block; margin-bottom: 4px; }
+.cf-result p { margin: 0 0 12px; color: var(--muted); }
+.cf-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.cf-result .btn-ghost { color: var(--ink); border-color: var(--ink); }
+@media (max-width: 900px) { .car-finder { grid-template-columns: 1fr 1fr; } .car-finder button { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .car-finder { grid-template-columns: 1fr; } }

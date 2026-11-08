@@ -68,6 +68,31 @@
     });
   });
 
+  // 차량 크기 추천 도우미
+  document.querySelectorAll(".car-finder").forEach(function (f) {
+    var out = f.querySelector(".cf-result");
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var p = f.elements.people.value, pl = f.elements.place.value, st = f.elements.stage.value, sd = f.elements.side.value;
+      var car, why, link;
+      if (p === "xl" || (pl === "plaza" && p !== "s")) {
+        car = "5톤 리프트 (300인치)"; why = "사람이 많고 멀리서 봐야 합니다. 리프트로 화면을 높이 올리고 마이크 10개·24채널 음향을 씁니다."; link = "large-led-truck.html";
+      } else if (st === "y" || p === "l") {
+        car = "3톤 슬라이드형 (120인치 + 무대 단상)"; why = "차량 옆면이 무대로 펼쳐져 연설·공연을 바로 할 수 있습니다."; link = "stage-truck.html";
+      } else if (sd === "two") {
+        car = "양면 LED 트럭"; why = "인도와 차도 양쪽에 화면이 있어 한 번에 두 방향으로 보입니다."; link = "double-sided-led-truck.html";
+      } else {
+        car = "1톤 (100인치)"; why = "골목·매장 앞에 세우기 쉽고 순회 홍보에 맞습니다."; link = "promo.html";
+      }
+      if (sd === "two" && car.indexOf("양면") < 0) why += " 양쪽으로 보여야 하면 양면형도 함께 상담해 드립니다.";
+      var txt = f.elements.people.selectedOptions[0].text + " · " + f.elements.place.selectedOptions[0].text;
+      out.innerHTML = "<b>추천: " + car + "</b><p>" + why + "</p>" +
+        '<div class="cf-actions"><a class="btn btn-call" href="' + smsLink("[드림애드컴 견적 문의]\n추천 차량: " + car + "\n인원·장소: " + txt + "\n날짜·기간: \n장소 주소: ") + '">이 차로 문자 견적</a>' +
+        '<a class="btn btn-ghost" href="' + link + '">차량 자세히</a></div>';
+      out.hidden = false;
+    });
+  });
+
   // 모바일 하단 고정 바 + 데스크톱 플로팅 전화 버튼
   var bar = document.createElement("div");
   bar.className = "mobile-bar";

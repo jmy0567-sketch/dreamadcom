@@ -22,6 +22,9 @@
 - [천안·아산·세종](https://jmy0567-sketch.github.io/dreamadcom/cheonan.html): 본사(천안 불당동)와 공장(천안 입장면)이 천안에 있음. 천안 호두축제·전국 농소가요제 현장.
 
 ## 안내 (처음 이용하는 분)
+- [3톤·5톤 대형 LED 차량](https://jmy0567-sketch.github.io/dreamadcom/large-led-truck.html): 1톤보다 드문 대형 차량 직접 보유. 5톤 리프트 300인치·마이크 10개·24채널 믹서·25kW 발전기, 3톤 120인치 슬라이드 무대형. 광장 집회·대형 유세·축제·분양. LED 업체·행사 대행사 협력 대여.
+- [양면 LED 트럭](https://jmy0567-sketch.github.io/dreamadcom/double-sided-led-truck.html): 차량 양쪽에 LED 화면. 사옥 앞 정차 시 인도와 차도 동시 노출, 주행 시 양방향 노출. 천안 자사 공장 제작, 기존 트럭 양면 개조 상담.
+- [이동식 무대차량](https://jmy0567-sketch.github.io/dreamadcom/stage-truck.html): 차량 옆면이 무대로 펼쳐지는 슬라이드형. LED 화면·음향·마이크·자체 발전기 포함. 축제·버스킹·기업 행사·집회 연설·유세.
 - [LED 전광판 트럭 비용 안내](https://jmy0567-sketch.github.io/dreamadcom/cost-guide.html): 비용은 차량 크기·이용 기간·지역과 동선으로 정해짐. 1일 6시간 기준, 기사 출장비·유류비·음향·발전기 포함.
 - [트럭 시위 하는 법](https://jmy0567-sketch.github.io/dreamadcom/truck-protest-guide.html): 메시지 → 장소·시간 → 신고 확인(주최자가 관할 경찰서) → 차량 → 영상 USB → 당일 운영.
 - [선거 유세차 준비 체크리스트](https://jmy0567-sketch.github.io/dreamadcom/election-guide.html): 2028년 4월 국회의원 선거 대비 조기 예약. 임대 또는 기존 트럭 개조, 래핑, 출고 전 테스트.
@@ -29,7 +32,7 @@
 
 ## 차량 사양 (차량 상태에 따라 다를 수 있음)
 - 1톤: LED 100인치(2.0×1.5m), 해상도 4,800·4mm 픽셀, 앰프 4kW·스피커 1.2kW, 믹서 7채널, 유·무선 마이크 3개, 무소음 발전기 7kW
-- 2.5톤(3톤): LED 120인치(2.5×2.0m), 해상도 3,800·3mm 픽셀, 앰프 4kW·스피커 2.4kW, 믹서 7채널, 마이크 3개, 발전기 7kW
+- 3톤: LED 120인치(2.5×2.0m), 해상도 3,800·3mm 픽셀, 앰프 4kW·스피커 2.4kW, 믹서 7채널, 마이크 3개, 발전기 7kW
 - 5톤 리프트형: LED 300인치(5.5×3.0m), 해상도 3,800·3mm 픽셀, 앰프 10kW·스피커 4.8kW, 믹서 24채널, 마이크 10개, 발전기 25kW
 - 영상 송출: USB, 노트북, 유튜브, 생방송. 출차 전 테스트.
 
