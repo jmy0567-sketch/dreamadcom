@@ -19,7 +19,7 @@ const tall=(a)=>{const u=a.w/100;return `<div style="position:absolute;inset:0;b
 <div style="position:absolute;left:${8*u}px;top:${18*u}px;font-weight:900;font-size:${13*u}px;line-height:1.12">갤러리아에<br>처음 열린<br><span class="ac">광고 자리</span></div>
 <div style="position:absolute;left:${8*u}px;right:${8*u}px;top:${a.h*0.52}px;font-weight:500;font-size:${5.4*u}px;line-height:1.5;color:#e5e7eb">이 자리의<br><b style="color:#fff">첫 번째 브랜드</b>를 모십니다</div>
 <div style="position:absolute;left:${8*u}px;right:${8*u}px;bottom:${8*u}px;display:flex;align-items:flex-end;justify-content:space-between">
- <div><div style="font-weight:700;font-size:${4.4*u}px;color:#bbb">광고 문의</div><div style="font-weight:700;font-size:${10.5*u}px;line-height:1;white-space:nowrap" class="ac">1599-3611</div><div style="font-weight:700;font-size:${4*u}px;color:#bbb;margin-top:${1.5*u}px">갤러리아 공식 광고대행사 (주)드림애드컴</div></div>
+ <div><div style="font-weight:700;font-size:${4.4*u}px;color:#bbb">광고 문의</div><div style="font-weight:700;font-size:${10.5*u}px;line-height:1;white-space:nowrap" class="ac">1599-3611</div><div style="font-weight:700;font-size:${3.3*u}px;white-space:nowrap;color:#bbb;margin-top:${1.5*u}px">갤러리아 공식 광고대행사 (주)드림애드컴</div></div>
  <img src="${QR}" style="width:${22*u}px;height:${22*u}px;border-radius:${1.5*u}px">
 </div>`};
 const wide=(a)=>{const u=a.h/100;return `<div style="position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,169,110,.16),transparent 45%),#0b0b0c"></div>
