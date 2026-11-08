@@ -14,9 +14,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/update_blog.py .
-      - name: 바뀐 게 있으면 올리기
+      - name: 바뀐 게 있으면 올리고 빙·네이버에 알리기
         run: |
           git config user.name "dreamadcom-bot"
           git config user.email "actions@users.noreply.github.com"
           git add index.html cases.html
-          git diff --cached --quiet || (git commit -m "블로그 최신 글 반영" && git push)
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "블로그 최신 글 반영" && git push
+          sleep 90
+          K=a8c0a7e28dec4de4a36624780bced4ac
+          B="https://jmy0567-sketch.github.io/dreamadcom/"
+          BODY="{\"host\":\"jmy0567-sketch.github.io\",\"key\":\"$K\",\"keyLocation\":\"${B}$K.txt\",\"urlList\":[\"$B\",\"${B}cases.html\",\"${B}rss.xml\"]}"
+          for ep in https://api.indexnow.org/indexnow https://searchadvisor.naver.com/indexnow; do
+            curl -s -o /dev/null -w "$ep %{http_code}\n" -X POST -H "Content-Type: application/json; charset=utf-8" -d "$BODY" "$ep" || true
+          done
