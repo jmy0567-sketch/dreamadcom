@@ -35,6 +35,11 @@
     btn.addEventListener("click", function () { navEl.classList.toggle("open"); });
     navEl.addEventListener("click", function (e) { if (e.target.tagName === "A") navEl.classList.remove("open"); });
   }
+  // 휴대폰·태블릿 메뉴 줄: 지금 페이지 메뉴가 보이도록 옆으로 밀어 둔다
+  var activeNav = navEl && navEl.querySelector("a.active");
+  if (activeNav && navEl.scrollWidth > navEl.clientWidth) {
+    navEl.scrollLeft = activeNav.offsetLeft - (navEl.clientWidth - activeNav.offsetWidth) / 2;
+  }
 
   var footer = document.getElementById("site-footer");
   if (footer && !footer.children.length) {

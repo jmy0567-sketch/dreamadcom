@@ -66,11 +66,20 @@ p { margin: 0 0 1em; }
 .menu-btn { display: none; margin-left: auto; background: none; border: 0; color: #fff; padding: 8px; cursor: pointer; }
 
 @media (max-width: 1080px) {
-  .nav { display: none; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; background: var(--ink); padding: 8px 16px 16px; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .nav.open { display: flex; }
-  .nav a { padding: 14px 12px; font-size: 17px; }
-  .menu-btn { display: block; }
+  /* 메뉴를 숨기지 않고 로고 아래 한 줄로 고정 (옆으로 밀어서 보기) */
+  html { scroll-padding-top: 120px; }
+  .site-header .wrap { flex-wrap: wrap; height: auto; gap: 0 16px; padding-top: 10px; }
+  .site-header .logo { height: 44px; }
+  .nav { order: 3; width: 100%; margin: 0 -4px; padding: 6px 0 8px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { flex: none; padding: 7px 12px; font-size: 15px; white-space: nowrap; background: rgba(255,255,255,.06); border-radius: 99px; }
+  .nav a.active { background: var(--lime); color: var(--ink); }
+  .menu-btn { display: none; }
+  .header-call { margin-left: auto; padding: 8px 14px; font-size: 15px; }
+}
+@media (max-width: 560px) {
   .header-call { display: none; }
+  .nav a { font-size: 14px; padding: 6px 11px; }
 }
 
 /* ---------- Buttons ---------- */
