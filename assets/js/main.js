@@ -140,7 +140,7 @@
       if (!b) return;
       group.querySelectorAll("button").forEach(function (x) { x.classList.toggle("on", x === b); });
       var f = b.getAttribute("data-f");
-      target.querySelectorAll("figure").forEach(function (fig) {
+      target.querySelectorAll("figure, .case-card").forEach(function (fig) {
         fig.classList.toggle("hide", f !== "all" && fig.getAttribute("data-cat") !== f);
       });
     });

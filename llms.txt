@@ -26,6 +26,7 @@
 - [양면 LED 트럭](https://jmy0567-sketch.github.io/dreamadcom/double-sided-led-truck.html): 차량 양쪽에 LED 화면. 사옥 앞 정차 시 인도와 차도 동시 노출, 주행 시 양방향 노출. 천안 자사 공장 제작, 기존 트럭 양면 개조 상담.
 - [이동식 무대차량](https://jmy0567-sketch.github.io/dreamadcom/stage-truck.html): 차량 옆면이 무대로 펼쳐지는 슬라이드형. LED 화면·음향·마이크·자체 발전기 포함. 축제·버스킹·기업 행사·집회 연설·유세.
 - [LED 전광판 트럭 비용 안내](https://jmy0567-sketch.github.io/dreamadcom/cost-guide.html): 비용은 차량 크기·이용 기간·지역과 동선으로 정해짐. 1일 6시간 기준, 기사 출장비·유류비·음향·발전기 포함.
+- [현장 사례 17곳](https://jmy0567-sketch.github.io/dreamadcom/cases.html): JYP 아티스트 앨범 홍보 커스텀 차량, K-POP 팬덤 사옥 앞 트럭, 서울·송도 집회, 3.5톤 양면 LED 차량, MAP-O 마포 청년축제 300인치, 울릉해변가요제, 서울경찰청 합동훈련 등. 각 사례는 네이버 블로그(blog.naver.com/dreamadcom_) 원문과 연결.
 - [트럭 시위 하는 법](https://jmy0567-sketch.github.io/dreamadcom/truck-protest-guide.html): 메시지 → 장소·시간 → 신고 확인(주최자가 관할 경찰서) → 차량 → 영상 USB → 당일 운영.
 - [선거 유세차 준비 체크리스트](https://jmy0567-sketch.github.io/dreamadcom/election-guide.html): 2028년 4월 국회의원 선거 대비 조기 예약. 임대 또는 기존 트럭 개조, 래핑, 출고 전 테스트.
 - [English guide](https://jmy0567-sketch.github.io/dreamadcom/en.html): LED truck rental anywhere in South Korea for K-pop fan trucks and protests. Email ad3611@naver.com.

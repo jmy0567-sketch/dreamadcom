@@ -403,3 +403,30 @@ section { padding: 96px 0; }
 .cf-result .btn-ghost { color: var(--ink); border-color: var(--ink); }
 @media (max-width: 900px) { .car-finder { grid-template-columns: 1fr 1fr; } .car-finder button { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .car-finder { grid-template-columns: 1fr; } }
+
+/* ---------- 현장 사례 · 블로그 연동 ---------- */
+.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.case-card { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+.case-card.hide { display: none; }
+.case-img { position: relative; display: block; aspect-ratio: 4/3; overflow: hidden; background: var(--ink-3); }
+.case-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+.case-card:hover .case-img img { transform: scale(1.05); }
+.case-tag { position: absolute; left: 12px; top: 12px; background: var(--lime); color: var(--ink); font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 99px; }
+.case-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.case-body h3 { font-size: 19px; font-weight: 900; line-height: 1.35; }
+.case-meta { font-size: 13px; color: #6b7280; }
+.case-meta b { color: var(--ink); }
+.case-body p { font-size: 15px; line-height: 1.6; }
+.case-more { margin-top: auto; font-weight: 800; color: var(--red, #e5252a); font-size: 14px; }
+.case-date { font-size: 12px; color: #9aa1ad; }
+@media (max-width: 960px) { .case-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .case-grid { grid-template-columns: 1fr; } }
+.blog-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.blog-item { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; transition: border-color .2s, transform .2s; }
+.blog-item:hover { border-color: var(--ink); transform: translateY(-2px); }
+.blog-date { font-size: 12px; font-weight: 800; color: #03c75a; }
+.blog-title { font-size: 15px; font-weight: 700; line-height: 1.45; color: var(--ink); }
+@media (max-width: 960px) { .blog-list { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .blog-list { grid-template-columns: 1fr; } }
+.btn-ghost-dark { display: inline-block; padding: 12px 20px; border: 2px solid var(--ink); border-radius: 99px; font-weight: 800; color: var(--ink); }
+.btn-ghost-dark:hover { background: var(--ink); color: var(--lime); }
