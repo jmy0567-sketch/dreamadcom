@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__mirr",
+      "mcp__Notion__notion-fetch",
+      "mcp__Notion__notion-update-page",
+      "mcp__Notion__notion-search",
+      "mcp__Google_Drive__search_files",
+      "mcp__Google_Drive__read_file_content",
+      "mcp__Google_Drive__list_recent_files",
+      "mcp__claude-code-remote__send_message",
+      "mcp__claude-code-remote__get_session",
+      "mcp__claude-code-remote__get_trigger"
+    ]
+  }
+}
