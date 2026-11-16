@@ -52,6 +52,7 @@
       '<li>대표전화 <a href="' + TEL_LINK + '" style="color:#d7ff3c;font-weight:800">' + TEL + "</a></li>" +
       '<li>이메일 <a href="mailto:ad3611@naver.com">ad3611@naver.com</a></li>' +
       '<li><a href="https://blog.naver.com/dreamadcom_" target="_blank" rel="noopener">네이버 블로그 (현장 소식)</a></li>' +
+      '<li><a href="https://m.place.naver.com/place/1662293409" target="_blank" rel="noopener">네이버 지도 · 드림애드컴</a></li>' +
       "</ul></div>" +
       "<div><h4>찾아오시는 길</h4><ul>" +
       "<li><b style=\"color:#cfd4dd\">본사</b> 충남 천안시 서북구 불당34길 3-16</li>" +

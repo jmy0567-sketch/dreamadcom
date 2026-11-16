@@ -14,11 +14,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/update_blog.py .
+      - run: python tools/touch_sitemap.py .
       - name: 바뀐 게 있으면 올리고 빙·네이버에 알리기
         run: |
           git config user.name "dreamadcom-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add index.html cases.html
+          git add index.html cases.html sitemap.xml
           if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
           git commit -m "블로그 최신 글 반영"
           for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 10; done
