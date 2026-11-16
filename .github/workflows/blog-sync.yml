@@ -20,7 +20,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add index.html cases.html
           if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
-          git commit -m "블로그 최신 글 반영" && git push
+          git commit -m "블로그 최신 글 반영"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push && break; sleep 10; done
           sleep 90
           K=a8c0a7e28dec4de4a36624780bced4ac
           B="https://jmy0567-sketch.github.io/dreamadcom/"
