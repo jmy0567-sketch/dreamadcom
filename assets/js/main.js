@@ -69,8 +69,12 @@
   document.querySelectorAll(".quick-quote").forEach(function (f) {
     f.addEventListener("submit", function (e) {
       e.preventDefault();
-      var v = function (n) { return (f.elements[n].value || "").trim(); };
-      location.href = smsLink("[드림애드컴 견적 문의]\n용도: " + v("use") + "\n날짜·기간: " + v("date") + "\n장소: " + v("place") + "\n차량: " + v("car"));
+      // 양식의 칸 이름(label 글자)을 그대로 문자에 넣는다 — 택배차·갤러리아 페이지처럼 칸 이름이 달라도 맞게
+      var lines = [].map.call(f.querySelectorAll("label"), function (l) {
+        var c = l.querySelector("input,select,textarea");
+        return (l.firstChild.textContent || "").trim() + ": " + (c ? (c.value || "").trim() : "");
+      });
+      location.href = smsLink("[드림애드컴 견적 문의]\n" + lines.join("\n"));
     });
   });
 
