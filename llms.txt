@@ -19,7 +19,6 @@
 - [LED 스크린 대여](https://jmy0567-sketch.github.io/dreamadcom/screen.html): 200~500인치 실내외 LED 스크린. 설치·운영·철수까지 전담팀.
 
 - [분양·개업·기업 홍보](https://jmy0567-sketch.github.io/dreamadcom/business.html): 아파트 분양, 매장 개업, 신제품 시음·체험, 프랜차이즈 캠페인. 여러 대 동시 운영, 브랜드 래핑, 장기 계약.
-- [택배차 래핑 광고](https://jmy0567-sketch.github.io/dreamadcom/delivery-truck-ad.html): 택배 탑차 옆면 2면+뒷면 1면 광고. 차량 1대 17만~20만 원, 최소 5대, 시내버스 광고 대비 약 1/3 비용, 지역 선택, 전국 상담.
 - [천안·아산·세종](https://jmy0567-sketch.github.io/dreamadcom/cheonan.html): 본사(천안 불당동)와 공장(천안 입장면)이 천안에 있음. 천안 호두축제·전국 농소가요제 현장.
 
 ## 안내 (처음 이용하는 분)
